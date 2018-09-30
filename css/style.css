@@ -63,11 +63,18 @@ body {
     display: none;
 }
 
-.in_game_standard--visible,
-.in_game_vs_player--visible {
-    display: inherit;
+.in_game_standard,
+.in_game_vs_player {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
 }
 
+#form--hidden {
+    display: none;
+}
+
+.table_answer,
 .score_table_game,
 .score_table_game_vs_player {
     margin-top : 1rem;
@@ -77,6 +84,20 @@ body {
     text-align: center;
 }
 
-.cell_title {
+.table_answer {
+    width: 100%
+}
+
+.retry_button {
+    align-self: center;
+    margin-top: 0.8rem;
+}
+
+.box--hidden {
+    display: none;
+}
+
+.cell_title,
+.answer {
     border: 1px rgb(172, 172, 172) solid;
 }

@@ -58,15 +58,30 @@
         <div class="box">
             <div class="in_game_standard--hidden">
                 <form action="" id="form">
-                        <span>Je pense au chiffre : <input class="form_input" type="number" name="produit"><button class="form_button">OK </button> </span>
+                        <span>Je pense au chiffre : <input class="form_input" type="number" name="numberTry"><button class="form_button">OK </button> </span>
+                        <span class="invalid"></span>
                 </form>
+                
+                <table class="table_answer">
+                    <thead>
+                        <tr>
+                            <th class="cell_title">Essai n°</th>
+                            <th class="cell_title">Chiffre</th>
+                            <th class="cell_title">Indice</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody class="answer">
+                    </tbody>
+                </table>
+                <div class="retry_button"></div>
             </div>
 
             <div class="in_game_vs_player--hidden">
             </div>
         </div>
 
-        <div class="box">
+        <div class="box--hidden">
             <table class="score_table_game">
                 <thead>
                     <tr>
