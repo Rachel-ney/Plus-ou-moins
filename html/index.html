@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title> Plus ou moins ? </title>
+  </head>
+
+  <body>
+    <section class="wrapper">
+        <header>
+            <h1 class="header_title"> Vous aimez le jeu du plus ou moins ? </h1>
+            <p class="header_subtitle"> 
+                Vous allez être servi ! <br/><br/>
+                Le principe est simple, la machine tire un chiffre au hasard et vous devez le retrouver en moins de 10 coup avec pour seule indication : c'est plus ou c'est moins ! 
+            </p>
+        </header>
+        
+        <div class="box">
+            <article class="game_standart" >
+                <p class="game_title"> Cliquez sur le niveau de difficulté voulu : </p>
+
+                <ul class="game_button_list"> 
+                    <li><button class="easy_button"><span class="game--bold">Facile</span></button> de 1 à 100 </li>
+                    <!--
+                    <li><button class="normal_button"><span class="game--bold">Normal</span></button> de 1 à 500 </li>
+
+                    <li><button class="hard_button"><span class="game--bold">Difficile</span></button> de 1 à 1000 </li>
+
+                    <li><button class="hell_button"><span class="game--bold">Infernal </span></button> de 1 à 10000 </li>
+                    -->
+                </ul>
+
+            </article>
+
+            <article class="game_vs_player">
+                <p class="game_title"> Et si on inversait les rôles ? </p>
+                    <span class="game--bold">VOUS</span> pensez à un chiffre entre 1 et 1000, et la machine doit le retrouver en moins de 10 coup héhé. <br/>
+                    Soyez bon joueur ne trichez pas dans vos indication !
+                </p>
+                <ul class="game_vs_player_rules">
+                    <li class="game_vs_player--italic" > Valeur à entrer dans le cas ou :</li> 
+                    <li> C'est <span class="game--bold">plus</span> : 1</li>
+                    <li>C'est <span class="game--bold">moins</span> :  2</li> 
+                    <li>Si la machine à <span class="game--bold">trouvé</span>, vous devrez entrer 3</li> 
+                </ul>
+                <p class="game_title">Alors tenté ?</p>
+                <ul class="game_button_list">
+                    <li> <button class="yes_button"><span class="game--bold">Evidemment !</span></button></li>
+                    <li><button class="no_button"><span class="game--bold">Très peu pour moi...</span></button></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="box">
+            <div class="in_game_standard--hidden">
+                <form action="" id="form">
+                        <span>Je pense au chiffre : <input class="form_input" type="number" name="produit"><button class="form_button">OK </button> </span>
+                </form>
+            </div>
+
+            <div class="in_game_vs_player--hidden">
+            </div>
+        </div>
+
+        <div class="box">
+            <table class="score_table_game">
+                <thead>
+                    <tr>
+                        <th class="cell_title">Niveau</th>
+                        <th class="cell_title">Résultat</th>
+                        <th class="cell_title">Tentatives</th>
+                        <th class="cell_title">Nombre à trouver</th>
+                    </tr>
+                </thead>
+
+                <tbody class="resultat">
+                </tbody>
+            </table>
+
+            <table class="score_table_game_vs_player">
+                    <thead>
+                        <tr>
+                            <th class="cell_title">Résultat</th>
+                            <th class="cell_title">Tentatives</th>
+                            <th class="cell_title">Nombre à trouver</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="resultat">
+                    </tbody>
+                </table>
+        </div>
+
+
+
+    </section>
+  </body>
+    <script src="../js/game.js"> </script>
+    <script src="../js/gameVSplayer.js"> </script>
+</html>
